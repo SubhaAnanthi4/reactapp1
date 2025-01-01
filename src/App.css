@@ -6,6 +6,37 @@
   margin-right: 500px;
   border-radius: 20px;
   padding: 35px;
-  /*padding-bottom: 10px;
-  padding-left: 10px;*/
+  padding-bottom: 10px;
+  padding-left: 10px;}*/
 
+
+
+.fruit {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.fruit li::before {
+  content: "* ";
+  color: black;
+}
+
+/* .vegie {
+  list-style-type: upper-roman;
+}
+ */
+
+.bird {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bird li::before {
+  content: "# ";
+  color: black;
+}
+
+
+.master {
+  list-style-type: decimal;
+}

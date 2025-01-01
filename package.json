@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://<username>.github.io/<repo-name>",
   "scripts": {
+    "dev": "vite",
+  
     "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

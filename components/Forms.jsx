@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+{/*import React, {Component} from "react";
 
 class Forms extends React.Component
 {
@@ -10,4 +10,17 @@ class Forms extends React.Component
             </h1>
         )
     }
-}export default Forms;
+}export default Forms;*/}
+
+function Forms(props) {
+    let d = 0;
+    d = props.system + 20;
+
+
+    return (
+
+        <h1> My system is  {d} </h1>
+    )
+
+}
+export default Forms;
