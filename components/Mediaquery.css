@@ -1,0 +1,123 @@
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: aqua;
+    width: 60%; /* Default width for large screens */
+    max-width: 600px; /* Prevent the form from becoming too wide */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.name, .email, .address {
+    margin-top: 20px;
+    width: 100%; /* Input fields take full width of the form */
+    max-width: 400px; /* Prevent input fields from becoming too wide */
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: block;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 100%; /* Align labels with input fields */
+    max-width: 400px;
+}
+
+h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 28px;
+}
+
+.but {
+    margin-top: 20px;
+    width: 150px; /* Consistent button size */
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #015eff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.but:hover {
+    background-color: #0c4bb7;
+}
+
+/* Media Queries for Responsive Width */
+@media (max-width: 1024px) {
+    .forms {
+        width: 70%; /* Slightly narrower on medium screens */
+        padding: 20px;
+    }
+
+    .name, .email, .address {
+        width: 90%; /* Input fields fit smaller screens */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .but {
+        width: 140px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .forms {
+        width: 80%; /* Further adjust for tablet screens */
+    }
+
+    .name, .email, .address {
+        width: 100%; /* Input fields take full width */
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .but {
+        width: 130px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .forms {
+        width: 95%; /* Maximize space usage for small devices */
+        padding: 15px;
+    }
+
+    .name, .email, .address {
+        width: 100%; /* Input fields take full width */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .but {
+        width: 120px;
+        font-size: 13px;
+    }
+}
